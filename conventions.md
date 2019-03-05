@@ -32,11 +32,17 @@ Some constructions you must use for sure:
     }
 }
 ```
+
+
+
 #### Class names
 Use BEM conventions for create class names for CSS. responsible for correctness checking ---> `@fs1.yuri.pod` in Slack.
 
 ### React components
+**Use ES6/ES7 syntax** for your components code. It meats: *JS classes*, *destructurisation*, *spread*, *arrow functions*, *default values* for function parameters, etc.
 
 **Functional components** have no `state` and contains all styles for children components.
+
 **Variables** names - use camelCase for several words in name and define **only informative** ones.
+
 ###### no `var`, only `let` and `const`
