@@ -4,3 +4,19 @@ server:
 spring:
   profiles:
     active: local
+
+---
+
+spring:
+  profiles: local
+
+  datasource:
+    url: jdbc:h2:mem:final_project_group2
+    username: root
+    password:
+    driver-class-name: org.h2.Driver
+
+  h2:
+    console:
+      enabled: true
+      path: /console
