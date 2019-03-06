@@ -14,5 +14,5 @@ public class TalentProfile {
   private List<Link> links;
   private List<Experience> prevExp;
   private List<Education> educations;
-  private List<String> languages;
+  private List<Language> languages;
 }
