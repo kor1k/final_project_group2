@@ -8,7 +8,7 @@ import java.util.Date;
 public class Education {
   private Long id;
   private String institution;
-  private EducationDegree degree;
+  private String degree;
   private String specialisation;
   private Date dateStarted;
   private Date dateEnded;
