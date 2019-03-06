@@ -1,7 +1,16 @@
 # Mango
-Mango it's platform for talents and companies who is looking to find technical specialists. NEED ADD TEXT(!)
+Mango is a platform for talents and companies looking for technicians. It allows you to speed up the process of hiring experienced professionals by companies, and at the same time, talents will be able to present their skills and wishes in an accessible and objective manner so that they can quickly find a job with the company.
 
- ## Stack of technologies
+#Installation instructions to bootstrap project
+### Start frontend side
+cd frontend <br/>
+npx install <br/>
+npx start <br/>
+
+### Start backend side
+...
+
+ ## Stack of technologies which were used in project
  ### Frontend
  React <br/>
  Redux<br/>
