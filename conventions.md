@@ -1,5 +1,7 @@
 ## Team code conventions
 
+### 2 spaced tabs for all documents in the project
+
 ### VCS `Git`
 #### Branches
 Every branch creates for one task. Branch name should match with Trello card title.
