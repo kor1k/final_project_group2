@@ -6,10 +6,11 @@ import java.util.List;
 
 @Data
 public class TalentProfile {
+  private Long id;
   private String positionType;
-  private byte employmentType;
+  private Byte employmentType;
   private Location location;
-  private int salary;
+  private Integer salary;
   private List<String> fitTypes;
   private List<Link> links;
   private List<Experience> prevExp;
