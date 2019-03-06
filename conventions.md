@@ -1,5 +1,7 @@
 ## Team code conventions
 
+### 2 spaced tabs for all documents in the project
+
 ### VCS `Git`
 #### Branches
 Every branch creates for one task. Branch name should match with Trello card title.
@@ -46,3 +48,27 @@ Use BEM conventions for create class names for CSS. responsible for correctness 
 **Variables** names - use camelCase for several words in name and define **only informative** ones.
 
 ###### no `var`, only `let` and `const`
+
+### CSS variables for project
+```scss
+$basicRem: 10px;
+
+$containerWidth: 120rem;
+$sectionPadding: 5rem;
+
+$bgPrimaryURL: ''; /*TODO: add actual url to image*/
+
+$colorPrimary: #ff6a00;
+$colorSecondary: #4caf50;
+$colorSecondaryOpacity: rgba(76,175,80,0.1);
+$colorSurfaceGray: #f2f2f2;
+$colorSurfaceBlack: #0b0b0b;
+$colorElementGray: #bdbdbd;
+$colorTextHardGrey: #4f4f4f;
+$colorTextSoftGrey: #333;
+
+$sizePlusBTN: 2.8rem;
+
+$paddingBtnTB: 2rem;
+$paddingBtnLR: 4.5rem;
+```
