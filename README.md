@@ -3,9 +3,9 @@ Mango is a platform for talents and companies looking for technicians. It allows
 
 #Installation instructions to bootstrap project
 ### Start frontend side
-cd frontend <br/>
-npx install <br/>
-npx start <br/>
+`cd frontend` <br/>
+`npx install` <br/>
+`npx start` <br/>
 
 ### Start backend side
 ...
@@ -32,3 +32,5 @@ npx start <br/>
  SonarQube<br/>
  Coveralls<br/>
  Docker<br/>
+ 
+ 
