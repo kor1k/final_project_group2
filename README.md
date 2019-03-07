@@ -1,8 +1,7 @@
+# Mango </br>
 [![Build Status](https://travis-ci.org/kor1k/final_project_group2.svg?branch=master)](https://travis-ci.org/kor1k/final_project_group2)
 
-# Mango
-Mango is a platform for talents and companies looking for technicians. It allows you to speed up the process of hiring experienced professionals by companies, and at the same time, talents will be able to present their skills and wishes in an accessible and objective manner so that they can quickly find a job with the company.
-
+Mango is a platform for talents and companies looking for technicians. 
 
 
 #Installation instructions to bootstrap project
@@ -18,7 +17,6 @@ Mango is a platform for talents and companies looking for technicians. It allows
  ### Frontend
  React <br/>
  Redux<br/>
- Bootstrap<br/>
  SASS<br/>
  ESLint<br/>
  StyleLint
@@ -34,6 +32,7 @@ Mango is a platform for talents and companies looking for technicians. It allows
  ### DevOps
  TravisCI<br/>
  SonarQube<br/>
+ Stylelint<br/>
  Coveralls<br/>
  Docker<br/>
  
