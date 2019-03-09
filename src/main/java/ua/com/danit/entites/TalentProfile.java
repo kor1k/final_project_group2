@@ -3,6 +3,7 @@ package ua.com.danit.entites;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -18,16 +19,30 @@ public class TalentProfile {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
+
   @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
   private String password;
+
+  @Column(name = "position_type")
   private String positionType;
+
+
+  @Column(name = "employment_type")
   private Byte employmentType;
+
   private Set<Skill> skillSet;
+
   private Location location;
+
   private Integer salary;
+
   private List<String> fitCompanyTypes;
+
   private List<Link> links;
+
   private List<Experience> prevExp;
+
   private List<Education> educations;
+
   private Set<Language> languages;
 }
