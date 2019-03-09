@@ -1,5 +1,6 @@
 # Mango </br>
 [![Build Status](https://travis-ci.org/kor1k/final_project_group2.svg?branch=master)](https://travis-ci.org/kor1k/final_project_group2)
+[![Coverage Status](https://coveralls.io/repos/github/kor1k/final_project_group2/badge.svg?branch=master)](https://coveralls.io/github/kor1k/final_project_group2?branch=master)
 
 Mango is a platform for talents and companies looking for technicians. 
 
