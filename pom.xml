@@ -28,7 +28,6 @@
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
             <version>1.4.198</version>
-            <scope>test</scope>
         </dependency>
 
         <dependency>
