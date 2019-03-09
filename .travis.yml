@@ -1,0 +1,19 @@
+dist: trusty
+
+language: java
+
+jdk:
+- oraclejdk8
+
+cache:
+  directories:
+  - $HOME/.m2
+   - ./frontend/node_modules/
+
+before_script:
+   - npm install --prefix frontend/
+
+script:
+  - mvn clean test
+  - npm run build --prefix frontend/
+
