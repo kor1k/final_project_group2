@@ -2,8 +2,9 @@ package ua.com.danit.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
+import ua.com.danit.entites.TalentProfile;
 
 @Repository
-public interface TalentProfileRepo extends JpaRepository {
+public interface TalentProfileRepo extends JpaRepository<TalentProfile, Long> {
 
 }
