@@ -14,5 +14,5 @@ before_script:
   - npm install --prefix frontend/
 
 script:
-  - mvn clean test jacoco:report coveralls:report
+  - mvn clean test
   - npm run build --prefix frontend/
