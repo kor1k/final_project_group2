@@ -42,6 +42,23 @@ Explain how to run the automated tests for this system
 
 Add additional notes about how to deploy this on a live system. Will write it as soon as it's possible
 
+## Technologies
+### Frontend
+* React <br/>
+* Redux<br/>
+* SASS<br/>
+* ESLint<br/>
+* StyleLint<br/>
+* SonarCloud<br/>
+
+### Backend
+* Spring Boot<br/>
+* Spring MVC<br/>
+* Spring Security<br/>
+* Spring Data JPA<br/>
+* PostgreSQL<br/>
+* Spring Test<br/>
+
 ## Built With
 
 * [React.js](https://reactjs.org/) - The web framework used
