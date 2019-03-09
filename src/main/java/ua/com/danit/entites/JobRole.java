@@ -10,12 +10,10 @@ import javax.persistence.Table;
 
 @Data
 @Entity
-@Table(name = "languages")
-public class Language {
+@Table(name = "job-rols")
+public class JobRole {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
   private String name;
-  private TalentProfile talent;
-  private String level;
 }
