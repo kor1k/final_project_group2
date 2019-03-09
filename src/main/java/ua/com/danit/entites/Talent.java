@@ -24,6 +24,7 @@ public class Talent {
   private String fullName;
 
   private String email;
+
   @OneToOne(cascade = CascadeType.MERGE)
   @JoinColumn(name = "location_id", referencedColumnName = "id")
   private Location location;

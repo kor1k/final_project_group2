@@ -26,11 +26,11 @@ public class TalentProfile {
   @Column(name = "position_type")
   private String positionType;
 
-
-  @Column(name = "employment_type")
-  private Byte employmentType;
-
-  private Set<Skill> skillSet;
+  /*TODO: PROBLEM - how to keep several values*/
+//  @Column(name = "employment_type")
+//  private Byte employmentType;
+//
+//  private Set<Skill> skillSet;
 
   private Location location;
 
