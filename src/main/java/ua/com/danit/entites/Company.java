@@ -7,7 +7,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import java.util.List;
+import java.util.Set;
 
 @Data
 @Entity
@@ -17,6 +17,6 @@ public class Company {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
   private String companyName;
-  private List<Employer> emploees;
+  private Set<Employer> employers;
   private Location location;
 }

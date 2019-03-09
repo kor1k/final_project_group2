@@ -11,7 +11,7 @@ import javax.persistence.Table;
 
 @Data
 @Entity
-@Table(name = "recruiters")
+@Table(name = "employers")
 public class Employer {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
