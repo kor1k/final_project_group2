@@ -1,0 +1,27 @@
+// imports partial scss files
+@import 'reset';
+
+// Color palette
+$primary: #FF3D00;      // Deep orange
+$secondary: #4CAF50;    // Green
+
+// Font
+$font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+
+
+body {
+  font-family: $font-stack
+}
+
+.center {
+  text-align: center;
+}
+
+.title {
+  color: $primary
+}
+
+.content {
+  font-size: 1.2rem;
+  color: $secondary;
+}

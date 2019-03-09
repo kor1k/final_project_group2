@@ -8,16 +8,11 @@ jdk:
 cache:
   directories:
     - $HOME/.m2
-      - ./frontend/node_modules/
+    - ./frontend/node_modules/
 
 before_script:
   - npm install --prefix frontend/
 
 script:
-  - mvn clean test
+  - mvn clean test jacoco:report coveralls:report
   - npm run build --prefix frontend/
-  <<<<<<< Updated upstream
-
-  =======
-- mvn clean test jacoco:report coveralls:report
-  >>>>>>> Stashed changes
