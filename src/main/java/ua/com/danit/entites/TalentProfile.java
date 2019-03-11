@@ -1,6 +1,7 @@
 package ua.com.danit.entites;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Builder;
 import lombok.Data;
 
 import javax.persistence.CascadeType;
@@ -21,6 +22,7 @@ import java.util.Set;
 
 @Data
 @Entity
+@Builder
 @Table(name = "talent-profiles")
 public class TalentProfile {
   @Id

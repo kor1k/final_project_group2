@@ -18,7 +18,6 @@ import java.time.LocalDate;
 public class Education {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
-
   private Long id;
 
   @ManyToOne

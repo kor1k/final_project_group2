@@ -1,5 +1,6 @@
 package ua.com.danit.entites;
 
+import lombok.Builder;
 import lombok.Data;
 
 import javax.persistence.CascadeType;
@@ -14,6 +15,7 @@ import javax.persistence.Table;
 
 @Data
 @Entity
+@Builder
 @Table(name = "talents")
 public class Talent {
   @Id

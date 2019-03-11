@@ -1,5 +1,6 @@
 package ua.com.danit.entites;
 
+import lombok.Builder;
 import lombok.Data;
 
 import javax.persistence.Entity;
@@ -14,6 +15,7 @@ import javax.persistence.Table;
 import java.util.Set;
 
 @Data
+@Builder
 @Entity
 @Table(name = "companies")
 public class Company {
