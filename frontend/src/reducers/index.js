@@ -1,8 +1,10 @@
-import { combineReducers } from "redux";
-//import somethingReducer from './somethingReducer';
+import { combineReducers } from 'redux'
+import defaultReducer from './default'
 
-let combinedReducers = combineReducers({
-  // somethingReducer
-});
+// Use ES6 object literal shorthand syntax to define the object shape
+const rootReducer = combineReducers({
+  defaultReducer
+  // insert your reducers here
+})
 
-export default combinedReducers;
+export default rootReducer
