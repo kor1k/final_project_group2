@@ -1,0 +1,68 @@
+html {
+  font-size: 10px; }
+
+.form {
+  font-family: Roboto, sans-serif;
+  color: #ffffff;
+  width: 58rem;
+  background-color: #4caf50;
+  border-radius: 1rem;
+  display: inline-block;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 30%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+  .form-container {
+    width: 38rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    justify-content: center; }
+  .form-fields {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: 0;
+    position: relative; }
+    .form-fields a {
+      color: #ffffff;
+      font-size: 1.8rem;
+      text-decoration: none; }
+    .form-fields span {
+      color: #ff6a00; }
+    .form-fields input {
+      padding-left: 11rem;
+      padding-right: 11rem;
+      padding-bottom: 1.9rem;
+      padding-top: 1.9rem;
+      border-radius: 5rem;
+      border: none; }
+
+.icon {
+  position: absolute;
+  padding: 1.7rem 0 0 2.5rem;
+  font-size: 2.2rem; }
+
+.signup {
+  font-size: 3.6rem;
+  text-align: center; }
+
+.checkbox-agree {
+  font-size: 1.8rem; }
+
+.text {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  font-size: 1.6rem; }
+
+.btn-submit__getstarted {
+  margin-top: 3rem;
+  background-color: #ff6a00;
+  border: none;
+  font-size: 2.4rem;
+  color: #ffffff;
+  text-transform: uppercase; }

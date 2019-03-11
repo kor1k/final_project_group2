@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 import MainPage from '../pages/MainPage'
+import LoginForm from "./LoginForm";
 
 class App extends Component {
   render () {
@@ -8,6 +9,7 @@ class App extends Component {
       <div className='center'>
         {/* Only for example, delete anywhere */}
         <MainPage name='Mango' />
+        <LoginForm/>
       </div>
     )
   }
