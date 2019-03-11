@@ -1,23 +1,25 @@
 dist: trusty
-
 language: java
-
 jdk:
   - oraclejdk8
-
 cache:
   directories:
-    - $HOME/.m2
-      - ./frontend/node_modules/
-
+    - "$HOME/.m2 - ./frontend/node_modules/"
 before_script:
   - npm install --prefix frontend/
-
 script:
   - mvn clean test
-  - npm run build --prefix frontend/
-    - sonar-scanner
+  - npm run build --prefix frontend/ - sonar-scanner
+  - mvn sonar:sonar \
+    -Dsonar.projectKey=kor1k_final_project_group2 \
+    -Dsonar.organization=kor1k-github \
+    -Dsonar.host.url=https://sonarcloud.io \
+    -Dsonar.login=7498a9b2587c0a8ea7444835be714925d97ac01a
 addons:
   sonarcloud:
-    organization: "kor1k-github"
-    token: 04ef28fbe0e838e7d492e2a63707dbf999ef7507
+    organization: kor1k-github
+    token:
+      secure: S90MaV67coK6wa5q822k7+NG7N+3u8g3wDO04KleFwWILkfAYr3k5kG/hFCYZ+2d9g2ygYNBnvwVGve7f9sZVsHechQ1HlJ4peBLP8qAQTeOfI0h83he7Fdt5AyZB8+8zveLa6ooUWoJWMWxSbD/SpwGfYLnqO31N00j2Oa2dn62qzTh4MWnvteJ2k7QiZojoo3I65IkEfpAeKgxZQuqqBn802pk/hiV0w1cw9IWmW0uK7iJK3oia+EH64faJqvndvvELYzhKsa0TZXLV5BBijAI92T7aeSXqTJt8pPaYSUrq5t0E3liYrhJuSBhj7h4kQLXKU3i7QLbQM6VLUPAIVbbMLWyUYwRLzvC8TpDp416NoUvic3Gpg6EIghGApwfvekTb7dZef49555NPWrYAQyr1Gt+hx7zSPJXLkv1M9PQ+mA4+qsGgazsb1vMtOy9fuL/EC9ROHqtQW6QFei/GKskE9BxXBiysdBv+ZNBvxRlTm4oBQ/T5b2fEjlXYEqczU9yuhY6Iuh4xBdpGJRIpKTKiSkX36Ga7Io5N29275y7TuxcrbqiMzIi1YafOD2/0BlISfPjenAy2wOrGIhQ72AJItTtTswIY9vVqYony/qpZcZv3MiY38m9+2lvVU/lPOTP2kvckbF/ZMcSVz0qSW5U5LyT/SkPY2r1K3yzsfs=
+    script:
+      # other script steps might be done before running the actual analysis
+      - sonar-scanner
