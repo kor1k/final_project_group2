@@ -72,3 +72,20 @@ $sizePlusBTN: 2.8rem;
 $paddingBtnTB: 2rem;
 $paddingBtnLR: 4.5rem;
 ```
+
+# Project Structure
+`images` - component contain `img` folder if you can use some images inside it.
+
+`frontend/__tests__` - includes tests. One test-case = one component = one file `.js`.
+
+`frontend/src/fonts` - contain **all font files**.
+
+`frontend/src/style/fonts.scss` - contain **all `@fontface`'s** for all fonts in document. If you need custom font you add it here.
+
+**use `font-family` to plug the font into the class**
+
+`frontend/src/style/variables.scss` - contain **all scss variables** with values. You can add your personal variables if its not defined yet.
+
+`frontend/src/style/mixins.scss` - contain **all scss mixins**. Add you personal mixin shorthands to this file.
+
+`frontend/src/styles/index.scss` - includes all files above + has general styles.

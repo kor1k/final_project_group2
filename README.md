@@ -2,7 +2,7 @@
 
 Mango is a platform for talents and companies that search technical specialists <br/>
 <br/>
-[![Build Status](https://travis-ci.org/kor1k/final_project_group2.svg?branch=master)](https://travis-ci.org/kor1k/final_project_group2)
+[![Build Status](https://travis-ci.com/kor1k/final_project_group2.svg?branch=master)](https://travis-ci.com/kor1k/final_project_group2)
 [![Coverage Status](https://coveralls.io/repos/github/kor1k/final_project_group2/badge.svg?branch=master)](https://coveralls.io/github/kor1k/final_project_group2?branch=master)
 
 ## Getting Started
@@ -77,7 +77,7 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 * **Alex Ivanov** - *Initial work* - [alexqwerty2000](https://github.com/alexqwerty2000)
 * **Kostya Yelskiy** - *Initial work* - [kor1k](https://github.com/kor1k)
 * **Illia Barkov** - *Initial work* - [ElijahBark](https://github.com/ElijahBark)
-* **Denys .** - *Initial work* - [erom-dm](https://github.com/erom-dm)
+* **Denys Maksymovych** - *Initial work* - [erom-dm](https://github.com/erom-dm)
 * **Alex Kerimov** - *Initial work* - [...](https://github.com/)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
