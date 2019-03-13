@@ -1,13 +1,14 @@
 import React, {Component} from 'react'
 import { Field, reduxForm} from 'redux-form'
 import {Link} from "react-router-dom";
-import {FormInput} from "../../FormInput";
-import { validate } from '../../validation'
+
+import { FormInput } from "../../FormInput";
+// import { validate } from '../../validation'
+import { ButtonGetStarted } from '../../ButtonFormSubmit/ButtonGetStarted'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import * as icon from '../../fontawesomeicom/importicon'
-// import './SignupForm.scss'
+import * as icon from '../../fontawesomeicom/importicon'
 import '../../FormInput/FormInput.scss'
-import {ButtonGetStarted} from "../../ButtonFormSubmit/ButtonGetStarted";
 
 class SignupFormCompany extends Component{
     render(){
@@ -67,8 +68,8 @@ class SignupFormCompany extends Component{
 }
 
 SignupFormCompany = reduxForm({
-    form:'contact',
-    validate
+    form:'signupcompany',
+    // validate
 })(SignupFormCompany)
 
 export default SignupFormCompany

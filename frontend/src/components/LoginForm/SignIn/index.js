@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { FormInput } from "../../FormInput";
 import { ButtonSignIn } from "../../ButtonFormSubmit/ButtonSignIn";
 
-import { validate } from '../../validation'
+// import { validate } from '../../validation'
 
 import './SignInForm.scss'
 import * as icon from '../../fontawesomeicom/importicon'
@@ -49,7 +49,7 @@ class SignIn extends Component{
 
 SignIn = reduxForm({
     form:'contact',
-    validate
+    // validate
 })(SignIn)
 
 export default SignIn
