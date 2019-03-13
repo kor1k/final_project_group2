@@ -1,11 +1,12 @@
-html{
-  font-size: 10px;
-}
+
+@import '../../../styles/index';
+
+
 .form{
-  font-family: Roboto, sans-serif;
+  font-family: $font-primary-stack;
   color: #ffffff;
   width:58rem;
-  background-color: #4caf50;
+  background-color: $colorSecondary;
   border-radius: 1rem;
   display: inline-block;
   text-align: center;
@@ -38,16 +39,7 @@ html{
     }
 
     & span{
-      color: #ff6a00;
-    }
-
-    & input{
-      padding-left: 11rem;
-      padding-right: 11rem;
-      padding-bottom: 1.9rem;
-      padding-top: 1.9rem;
-      border-radius: 5rem;
-      border: none;
+      color: $colorPrimary;
     }
   }
 }
@@ -56,24 +48,19 @@ html{
   padding: 1.7rem 0 0 2.5rem;
   font-size: 2.2rem;
 }
-.signup{
+h1{
   font-size: 3.6rem;
   text-align: center;
+}
+.checkbox{
+  font-size: 2.5rem;
 }
 .checkbox-agree{
   font-size: 1.8rem;
 }
-.text{
+.form-text{
   padding-top: 2rem;
   padding-bottom: 2rem;
   text-align: center;
   font-size: 1.6rem;
-}
-.btn-submit__getstarted{
-  margin-top:3rem;
-  background-color: #ff6a00;
-  border: none;
-  font-size: 2.4rem;
-  color: #ffffff;
-  text-transform: uppercase;
 }
