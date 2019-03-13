@@ -5,14 +5,15 @@ ol {
   margin: 0;
   padding: 0; }
 
+/*TODO: add actual url to image*/
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif; }
+  font-family: "Roboto", sans-serif; }
 
 .center {
   text-align: center; }
 
 .title {
-  color: #ff3d00; }
+  color: #ff6a00; }
 
 .content {
   color: #4caf50;
