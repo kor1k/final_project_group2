@@ -1,4 +1,4 @@
-package ua.com.danit.entites;
+package ua.com.danit.entity;
 
 import lombok.Data;
 
@@ -13,21 +13,12 @@ import javax.persistence.Table;
 import java.time.LocalDate;
 
 @Data
-@Entity
+@Entity(name = "Experience")
 @Table(name = "experiences")
 public class Experience {
-  @Id
-  @GeneratedValue(strategy = GenerationType.IDENTITY)
+
+  @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
-
-
-  @ManyToOne
-  @JoinColumns({
-      @JoinColumn(name = "talent-profiles_id", referencedColumnName = "id", nullable = false),
-      @JoinColumn(name = "employers_id", referencedColumnName = "id", nullable = false),
-      @JoinColumn(name = "companies_id", referencedColumnName = "id", nullable = false),
-  })
-  private TalentProfile owner;
 
   private String company;
 
@@ -38,4 +29,5 @@ public class Experience {
   private LocalDate dateFinished;
 
   private String description;
+
 }

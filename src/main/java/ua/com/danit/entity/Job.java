@@ -1,36 +1,34 @@
-package ua.com.danit.entites;
+package ua.com.danit.entity;
 
-import lombok.Data;
+import java.util.HashSet;
+import java.util.Set;
 
-import javax.persistence.CollectionTable;
-import javax.persistence.Column;
-import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
-import java.util.Set;
+
+import lombok.Data;
 
 @Data
-@Entity
+@Entity(name = "Job")
 @Table(name = "jobs")
 public class Job {
+
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
 
   private String title;
 
-  @OneToMany(mappedBy = "jobs")
+  @ManyToOne(fetch = FetchType.LAZY)
   private Company company;
 
-  @OneToMany(mappedBy = "job")
-  private JobRole jobRole;
+  @ManyToOne(fetch = FetchType.LAZY)
+  private JobRole relatedRole;
 
-  private String employmentType;
-
-  private Set<Skill> skillSet;
 }

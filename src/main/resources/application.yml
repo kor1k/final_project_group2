@@ -9,18 +9,21 @@ spring:
 
 spring:
   jpa:
+    open-in-view: false
+    database-platform: org.hibernate.dialect.H2Dialect
     hibernate:
-      ddl-auto: update
+      ddl-auto: create     # Only for development
     show-sql: true
   profiles: local
 
+  # Embedded H2 database for tests
   datasource:
-    url: jdbc:h2:mem:final_project_group2
-    username: root
+    url: jdbc:h2:mem:testdb
+    username: sa
     password:
     driver-class-name: org.h2.Driver
 
   h2:
     console:
-      enabled: true
-      path: /console
+      enabled: true       # Enabling H2 Console
+      path: /h2           # Override URI to H2 console

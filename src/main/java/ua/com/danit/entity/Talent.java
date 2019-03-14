@@ -1,33 +1,35 @@
-package ua.com.danit.entites;
+package ua.com.danit.entity;
 
-import lombok.Builder;
-import lombok.Data;
-
-import javax.persistence.CascadeType;
-import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
+import lombok.Data;
+
 @Data
-@Entity
-@Builder
+@Entity(name = "Talent")
 @Table(name = "talents")
 public class Talent {
+
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
 
-  @Column(name="full_name")
   private String fullName;
 
   private String email;
 
-  @OneToOne(cascade = CascadeType.MERGE)
-  @JoinColumn(name = "location_id", referencedColumnName = "id")
+  private String password;
+
+  @ManyToOne(fetch = FetchType.LAZY)
   private Location location;
+
+  @OneToOne(fetch = FetchType.LAZY)
+  private Profile profile;
+
 }
