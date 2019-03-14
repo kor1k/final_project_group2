@@ -57,18 +57,37 @@ $containerWidth: 120rem;
 $sectionPadding: 5rem;
 
 $bgPrimaryURL: ''; /*TODO: add actual url to image*/
+$colorPrimary: #ff6a00; //Deep orange
+$colorSecondary: #4caf50; //Green
+$colorSecondaryOpacity: rgba(76,175,80,0.1); //translucent secondary color
+$colorSurfaceGray: #f2f2f2; //section grey background
+$colorSurfaceBlack: #0b0b0b; //header and footer background
+$colorElementGray: #bdbdbd; //inactive elements like btns, profilebuilder pages, ect
+$colorTextHardGrey: #4f4f4f; //all headers. In sections, in paragraphs of profilebuilder, ect
+$colorTextSoftGrey: #333; //all subheaders. Text below header elements.
 
-$colorPrimary: #ff6a00;
-$colorSecondary: #4caf50;
-$colorSecondaryOpacity: rgba(76,175,80,0.1);
-$colorSurfaceGray: #f2f2f2;
-$colorSurfaceBlack: #0b0b0b;
-$colorElementGray: #bdbdbd;
-$colorTextHardGrey: #4f4f4f;
-$colorTextSoftGrey: #333;
-
-$sizePlusBTN: 2.8rem;
+$sizePlusBTN: 2.8rem; //plus btn on profile builder size
 
 $paddingBtnTB: 2rem;
 $paddingBtnLR: 4.5rem;
+
+$font-primary-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+$font-secondary-stack: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
 ```
+
+# Project Structure
+`images` - component contain `img` folder if you can use some images inside it.
+
+`frontend/__tests__` - includes tests. One test-case = one component = one file `.js`.
+
+`frontend/src/fonts` - contain **all font files**.
+
+`frontend/src/style/fonts.scss` - contain **all `@fontface`'s** for all fonts in document. If you need custom font you add it here.
+
+**use `font-family` to plug the font into the class**
+
+`frontend/src/style/variables.scss` - contain **all scss variables** with values. You can add your personal variables if its not defined yet.
+
+`frontend/src/style/mixins.scss` - contain **all scss mixins**. Add you personal mixin shorthands to this file.
+
+`frontend/src/styles/index.scss` - includes all files above + has general styles.
