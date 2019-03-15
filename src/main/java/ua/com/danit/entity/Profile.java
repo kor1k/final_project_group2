@@ -6,6 +6,8 @@ import java.util.Set;
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
@@ -23,6 +25,7 @@ import lombok.Data;
 public class Profile {
 
   @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
 
   @OneToOne(fetch = FetchType.LAZY)
@@ -41,5 +44,11 @@ public class Profile {
 
   @OneToMany(mappedBy = "profile")
   private Set<Language> languages = new HashSet<>();
+
+  @OneToMany(mappedBy = "profile")
+  private Set<Education> educations;
+
+  @OneToMany(mappedBy = "profile")
+  private Set<Education> experience;
 
 }

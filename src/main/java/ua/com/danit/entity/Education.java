@@ -2,7 +2,9 @@ package ua.com.danit.entity;
 
 import lombok.Data;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -17,7 +19,8 @@ import java.time.LocalDate;
 @Table(name = "educations")
 public class Education {
 
-  @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
 
   private String institution;
@@ -33,5 +36,9 @@ public class Education {
   private Boolean isCurrent;
 
   private String description;
+
+  @ManyToOne(cascade = CascadeType.MERGE, fetch = FetchType.LAZY)
+  @JoinColumn(name = "profile_id", nullable = false)
+  private Profile profile;
 
 }

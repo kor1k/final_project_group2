@@ -2,7 +2,9 @@ package ua.com.danit.entity;
 
 import lombok.Data;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -29,5 +31,10 @@ public class Experience {
   private LocalDate dateFinished;
 
   private String description;
+
+  @ManyToOne(cascade = CascadeType.MERGE, fetch = FetchType.LAZY)
+  @JoinColumn(name = "profile_id", nullable = false)
+  private Profile profile;
+
 
 }

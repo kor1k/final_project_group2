@@ -29,13 +29,13 @@ public class Company {
 
   @OneToMany(
         mappedBy = "company",
-        cascade = CascadeType.ALL,
+        cascade = CascadeType.MERGE,
         orphanRemoval = true)
   private Set<Employer> employers = new HashSet<>();
 
   @OneToMany(
         mappedBy = "company",
-        cascade = CascadeType.ALL,
+        cascade = CascadeType.MERGE,
         orphanRemoval = true)
   private Set<Job> jobs = new HashSet<>();
 

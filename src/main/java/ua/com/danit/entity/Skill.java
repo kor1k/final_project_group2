@@ -17,7 +17,8 @@ import lombok.Data;
 @Table(name = "skills")
 public class Skill {
 
-  @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
 
   private String name;
