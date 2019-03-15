@@ -35,12 +35,13 @@ body {
   transform: translate(-50%, -50%); }
   .form-container {
     width: 38rem;
-    padding-left: 10rem;
-    padding-right: 10rem;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     justify-content: center; }
   .form-fields {
+    width: 100%;
     padding-top: 1rem;
     padding-bottom: 1rem;
     margin: 0;
@@ -58,6 +59,7 @@ body {
   font-size: 2.2rem; }
 
 h1 {
+  margin: 0;
   font-size: 3.6rem;
   text-align: center; }
 
@@ -68,7 +70,7 @@ h1 {
   font-size: 1.8rem; }
 
 .form-text {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   text-align: center;
   font-size: 1.6rem; }

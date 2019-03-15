@@ -9,6 +9,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import * as icon from '../../fontawesomeicom/importicon'
 
 class SignupFormTalent extends Component{
+
+    // const inputChanges = ( input, meta:{touched, error}, ...rest) =>{
+    //     return (
+    //
+    //     )
+    // }
+
     render(){
 
         const { handleSubmit } = this.props
