@@ -4,34 +4,19 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>ua.com.danit</groupId>
-    <artifactId>mango</artifactId>
+    <groupId>group-2</groupId>
+    <artifactId>mangoapp</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>jar</packaging>
-
-    <name>Mango App</name>
-    <description>Mango is a recruiting platform for talents and employers.</description>
-
-    <!-- If you want you can add the entire development team,
-     this can increase the potential of the project. -->
-    <developers>
-        <developer>
-            <name>Korik</name>
-            <email><!-- Put your email here.
-             It is not required --></email>
-        </developer>
-    </developers>
-
-    <properties>
-        <java.version>1.8</java.version>
-    </properties>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.0.5.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
     </parent>
+
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
 
     <dependencies>
 
@@ -42,16 +27,18 @@
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jpa</artifactId>
+            <artifactId>spring-boot-starter-test</artifactId>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/com.h2database/h2 -->
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
             <version>1.4.198</version>
-            <scope>runtime</scope>
+            <scope>test</scope>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -70,25 +57,23 @@
             </plugin>
 
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-checkstyle-plugin</artifactId>
-                <version>2.17</version>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>0.7.9</version>
                 <executions>
                     <execution>
-                        <id>validate</id>
-                        <phase>validate</phase>
-                        <configuration>
-                            <configLocation>./checkstyle_config.xml</configLocation>
-                            <encoding>utf-8</encoding>
-                            <consoleOutput>true</consoleOutput>
-                            <failsOnError>true</failsOnError>
-                            <violationSeverity>warning</violationSeverity>
-                        </configuration>
+                        <id>prepare-agent</id>
                         <goals>
-                            <goal>check</goal>
+                            <goal>prepare-agent</goal>
                         </goals>
                     </execution>
                 </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.eluder.coveralls</groupId>
+                <artifactId>coveralls-maven-plugin</artifactId>
+                <version>4.3.0</version>
             </plugin>
 
         </plugins>
