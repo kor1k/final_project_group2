@@ -1,0 +1,19 @@
+.btn {
+  display: inline-block;
+  position: relative;
+  padding: 10px 15px;
+  transition: .4s;
+  border: none;
+  border-radius: 45px;
+  background-color: #ff3d00;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &[disabled] {
+    cursor: not-allowed;
+    opacity: .5;
+  }
+}
