@@ -17,10 +17,12 @@ import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Data
 @Entity(name = "Profile")
+@AllArgsConstructor
 @Table(name = "profiles")
 public class Profile {
 

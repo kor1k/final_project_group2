@@ -1,5 +1,6 @@
 package ua.com.danit.entity;
 
+import lombok.Builder;
 import lombok.Data;
 
 import javax.persistence.CascadeType;
@@ -16,6 +17,7 @@ import java.time.LocalDate;
 
 @Data
 @Entity(name = "Experience")
+@Builder
 @Table(name = "experiences")
 public class Experience {
 

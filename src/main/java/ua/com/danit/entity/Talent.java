@@ -9,10 +9,12 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Data
 @Entity(name = "Talent")
+@AllArgsConstructor
 @Table(name = "talents")
 public class Talent {
 
