@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-
+import React, {Component} from 'react'
+import Button from '../components/Button'
 import MainPage from '../pages/MainPage'
 
 class App extends Component {
@@ -7,7 +7,9 @@ class App extends Component {
     return (
       <div className='center'>
         {/* Only for example, delete anywhere */}
-        <MainPage name='Mango' />
+        <MainPage name='Mango'/>
+        <Button>sign in</Button>
+        <Button>sign up</Button>
       </div>
     )
   }
