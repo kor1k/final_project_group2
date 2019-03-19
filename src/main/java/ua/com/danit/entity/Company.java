@@ -11,16 +11,15 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
-import lombok.Builder;
 import lombok.Data;
 
 @Data
 @Entity(name = "Company")
-@Builder
 @Table(name = "companies")
 public class Company {
 
-  @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
 
   private String name;

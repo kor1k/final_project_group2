@@ -1,11 +1,11 @@
 package ua.com.danit.entity;
 
-import lombok.Builder;
 import lombok.Data;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
+import javax.persistence.ForeignKey;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -17,11 +17,11 @@ import java.time.LocalDate;
 
 @Data
 @Entity(name = "Experience")
-@Builder
 @Table(name = "experiences")
 public class Experience {
 
-  @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
 
   private String company;

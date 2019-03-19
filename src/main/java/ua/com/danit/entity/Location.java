@@ -2,7 +2,6 @@ package ua.com.danit.entity;
 
 import java.util.HashSet;
 import java.util.Set;
-import java.util.stream.LongStream;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
@@ -12,13 +11,10 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
 
 @Data
 @Entity(name = "Location")
-@Builder
 @Table(name = "locations")
 public class Location {
 
@@ -41,4 +37,5 @@ public class Location {
         cascade = CascadeType.ALL,
         orphanRemoval = true)
   private Set<Employer> employers = new HashSet<>();
+
 }

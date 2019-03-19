@@ -11,9 +11,9 @@ spring:
   jpa:
     open-in-view: false
     database-platform: org.hibernate.dialect.H2Dialect
-#    hibernate:
-#      ddl-auto:      # Only for development
-#    show-sql: true
+    hibernate:
+      ddl-auto: create     # Only for development
+    show-sql: true
   profiles: local
 
   # Embedded H2 database for tests

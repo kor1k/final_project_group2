@@ -1,11 +1,11 @@
 package ua.com.danit.entity;
 
-import lombok.Builder;
 import lombok.Data;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
+import javax.persistence.ForeignKey;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -17,7 +17,6 @@ import java.time.LocalDate;
 
 @Data
 @Entity(name = "Education")
-@Builder
 @Table(name = "educations")
 public class Education {
 

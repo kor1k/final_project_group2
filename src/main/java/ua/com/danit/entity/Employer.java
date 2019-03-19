@@ -15,8 +15,8 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Data
-@Entity(name = "Employer")
 @Builder
+@Entity(name = "Employer")
 @Table(name = "employers")
 public class Employer {
 
