@@ -3,10 +3,10 @@ $basicRem: 10px;
 $containerWidth: 120rem;
 $sectionPadding: 5rem;
 
-$bgPrimaryURL: ''; /*TODO: add actual url to image*/
+$bgPrimaryURL: ''; /* TODO: add actual url to image */
 $colorPrimary: #ff6a00; //Deep orange
 $colorSecondary: #4caf50; //Green
-$colorSecondaryOpacity: rgba(76,175,80,0.1); //translucent secondary color
+$colorSecondaryOpacity: rgba(76, 175, 80, .1); //translucent secondary color
 $colorSurfaceGray: #f2f2f2; //section grey background
 $colorSurfaceBlack: #0b0b0b; //header and footer background
 $colorElementGray: #bdbdbd; //inactive elements like btns, profilebuilder pages, ect
