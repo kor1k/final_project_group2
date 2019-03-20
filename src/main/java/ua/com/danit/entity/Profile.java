@@ -29,7 +29,7 @@ public class Profile {
   private Long id;
 
   @OneToOne(fetch = FetchType.LAZY)
-  @MapsId
+  @MapsId("talent_id")
   private Talent talent;
 
   private Double preferredSalary;
