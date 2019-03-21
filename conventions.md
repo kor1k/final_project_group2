@@ -78,7 +78,7 @@ $font-secondary-stack: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
 # Project Structure
 `images` - component contain `img` folder if you can use some images inside it.
 
-`frontend/__tests__` - includes tests. One test-case = one component = one file `.js`.
+`frontend/components/**/*.test.js` - One component - one test file (*.test.js) in the same folder.
 
 `frontend/src/fonts` - contain **all font files**.
 

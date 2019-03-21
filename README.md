@@ -37,7 +37,19 @@ End with an example of getting some data out of the system or using it for a lit
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
+```
+npm test
+```
+Runs interactive CreateReactApp test suite.
+
+```
+npm run coverage
+```
+Run tests and show coverage report.
+
+[Tests in CRA](https://facebook.github.io/create-react-app/docs/running-tests)<br/>
+[Jest docs - snapshot testing](https://jestjs.io/docs/en/snapshot-testing)<br/>
+Jest related configs can be found in package.json
 
 ## Deployment
 

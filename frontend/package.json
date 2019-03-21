@@ -19,6 +19,9 @@
     "stylelint-order": "^0.7.0"
   },
   "devDependencies": {
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.11.0",
+    "enzyme-to-json": "^3.3.5",
     "redux-devtools-extension": "^2.13.8",
     "redux-logger": "^3.0.6",
     "standard": "^10.0.3",
@@ -33,9 +36,10 @@
     "stylelint-dev": "stylelint '**/*.scss' --cache --cache-location './.stylelintcache'; exit 0",
     "stylelint-build": "stylelint 'src/**/*.scss'",
     "start": "npm-run-all -p watch-styles-sass watch-css start-js",
-    "test": "react-scripts test",
     "build": "npm run stylelint-build && npm run build-css && react-scripts build",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "test": "react-scripts test",
+    "coverage": "npm test -- --coverage"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -52,6 +56,23 @@
       "patterns": [
         "/src/**/*.scss"
       ]
+    }
+  },
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "collectCoverageFrom": [
+      "src/components/**/*.{js,jsx,ts,tsx}",
+      "!<rootDir>/node_modules/"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 70,
+        "functions": 70,
+        "lines": 70,
+        "statements": 70
+      }
     }
   },
   "proxy": "http://localhost:9000/api/"
