@@ -6,6 +6,7 @@ const MainPage = props => {
     <Fragment>
       <h1 className='title'>Hello {props.name}</h1>
       <p className='content'>Hooray! Now everything works as expected.</p>
+      <p className='title__job-roles'>Job Roles</p>
     </Fragment>
   )
 }
