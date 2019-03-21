@@ -1,6 +1,14 @@
 .card {
-  width: 10rem;
-  height: 13rem;
+  width: 23rem;
+  height: 23rem;
+  margin: 2rem;
+  padding: 1rem;
   border: 1px solid black;
   font-size: 2rem;
+  text-align: left;
+}
+
+.for__test__job-card {
+  display: flex;
+  justify-content: center;
 }

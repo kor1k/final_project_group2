@@ -6,7 +6,6 @@ const MainPage = props => {
     <Fragment>
       <h1 className='title'>Hello {props.name}</h1>
       <p className='content'>Hooray! Now everything works as expected.</p>
-      <p className='for__test'>commit for test</p>
     </Fragment>
   )
 }
